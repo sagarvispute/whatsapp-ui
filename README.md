@@ -1,4 +1,5 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Whatsapp-ui
+This is my sample practice IONIC 2 app, I just created for practice on UI
 
 ## How to use this template
 

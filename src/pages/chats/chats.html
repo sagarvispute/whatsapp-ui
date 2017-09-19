@@ -1,0 +1,152 @@
+<ion-list class="scrollable-list">
+  <ion-item *ngFor="let contact of contactlist">
+    <ion-thumbnail item-start>
+      <div class="round-img" (click)="viewPic(contact.id)">
+        <img src="https://en.bidaway.com/img/no_image_user_profile.png">
+      </div>
+    </ion-thumbnail>
+    <div (click)="chatDetail(contact.id)">
+      <h2>{{contact.name}}</h2>
+      <!--<p>Rohit: just posted a...</p>-->
+      <p>{{contact.number}}</p>
+      <div class="list-info" item-end>
+        <span>7:42 PM</span>
+        <div><span class="badge">1</span></div>
+      </div>
+    </div>
+  </ion-item>
+
+  <!--<ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Collage Mates</h2>
+    <p>Avinash: My message </p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Ghostbusters</h2>
+    <p>Ivan Reitman • 1984</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+        <div class="round-img">
+          <img src="../../assets/images/picture.jpg">
+        </div>
+    </ion-thumbnail>
+    <h2>Batman</h2>
+    <p>Tim Burton • 1988</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Back to the Future</h2>
+    <p>Robert Zemeckis • 1985</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>The Empire Strikes Back</h2>
+    <p>Irvin Kershner • 1980</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>The Terminator</h2>
+    <p>James Cameron • 1984</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>BV Katta </h2>
+    <p>Rohit: just posted a...</p>
+    <div class="list-info" item-end>
+      <span>7:42 PM</span>
+      <div><span class="badge">1</span></div>
+    </div>
+  </ion-item>
+  
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Collage Mates</h2>
+    <p>Avinash: My message </p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Ghostbusters</h2>
+    <p>Ivan Reitman • 1984</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+        <div class="round-img">
+          <img src="../../assets/images/picture.jpg">
+        </div>
+    </ion-thumbnail>
+    <h2>Batman</h2>
+    <p>Tim Burton • 1988</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>Back to the Future</h2>
+    <p>Robert Zemeckis • 1985</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>The Empire Strikes Back</h2>
+    <p>Irvin Kershner • 1980</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-thumbnail item-start>
+      <div class="round-img">
+        <img src="../../assets/images/picture.jpg">
+      </div>
+    </ion-thumbnail>
+    <h2>The Terminator</h2>
+    <p>James Cameron • 1984</p>
+  </ion-item>-->
+</ion-list>

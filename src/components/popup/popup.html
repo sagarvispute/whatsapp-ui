@@ -1,0 +1,21 @@
+<!--<ion-list *ngIf="param == 1">
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>New group</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>New broadcast</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>WhatsApp Web</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>Starred messages</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block (click)="showSettingsPage()">Settings</button></ion-item>
+</ion-list>
+
+<ion-list *ngIf="param == 2">
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>Status privacy</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block (click)="showSettingsPage()">Settings</button></ion-item>
+</ion-list>
+
+<ion-list *ngIf="param == 3">
+    <ion-item class="item-borderless"><button ion-button clear icon-only block>Clear call log</button></ion-item>
+    <ion-item class="item-borderless"><button ion-button clear icon-only block (click)="showSettingsPage()">Settings</button></ion-item>
+</ion-list>-->
+
+<ion-list>
+  <ion-item class="item-borderless" *ngFor="let option of optionList" ><button ion-button clear icon-only block>{{option.name}}</button></ion-item>
+</ion-list>

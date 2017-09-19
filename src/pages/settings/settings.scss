@@ -1,0 +1,22 @@
+page-settings {
+    ion-list {
+        & > ion-item {
+            ion-thumbnail { min-height: 70px !important; padding-top: 10px !important; }
+        }
+    }
+    .user-button {
+
+    }
+    .setting-list {
+        border-top: 1px solid #ddd;
+        ion-thumbnail {
+            font-size: 25px;
+            text-align: center;
+            min-height: 45px !important;
+            height: 45px;
+            color: #054443;
+            padding-top: 15px !important;
+        }
+    }
+    .item-md ion-thumbnail[item-start] { margin: 8px 16px 20px 0; }
+}

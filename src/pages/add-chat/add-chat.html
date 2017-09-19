@@ -1,0 +1,238 @@
+<ion-header>
+  <ion-navbar>
+      <ion-title>Select Contact chat</ion-title>
+      <ion-buttons end>
+        <button ion-button clear large *ngIf="!toggled" (click)="toggle()"><ion-icon name="search"></ion-icon></button>
+      </ion-buttons>
+      <ion-buttons end>
+        <button ion-button clear large (click)="addChat($event)"><ion-icon name="md-person-add"></ion-icon></button>
+      </ion-buttons>
+      <button ion-button clear *ngIf="toggled" large class="closeSearch" (click)="closeSearch($event)"><ion-icon name="arrow-back"></ion-icon></button>
+      <ion-searchbar *ngIf="toggled" class="ComponentSearch" [(ngModel)]="CompSearch" (ionInput)="searchThis($event)" (ionCancel)="cancelSearch($event)" (ionClear) = "cancelSearch($event)" [showCancelButton]="true">
+      </ion-searchbar>
+      <ion-buttons end>
+        <button ion-button clear icon-only large (click)="presentPopover($event)"><ion-icon name="more"></ion-icon></button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list class="scrollable-list">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <ion-icon name="md-person-add"></ion-icon>
+        </ion-thumbnail>
+        <h2>New group</h2>
+      </ion-item>
+
+      <ion-item *ngFor="let contact of contactlist">
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="https://en.bidaway.com/img/no_image_user_profile.png">
+          </div>
+        </ion-thumbnail>
+        <h2>{{contact.name}}</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <!--<ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>
+
+      <ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Sai Kumar</h2>
+        <p>Mobile</p>
+        <span item-end>
+            Mobile
+        </span>
+      </ion-item>-->
+    </ion-list>
+  </ion-content>

@@ -1,0 +1,8 @@
+page-search {
+    ion-header button { color: #054443 !important; }
+    ion-searchbar {
+        .searchbar-search-icon { display: none; }
+        .searchbar-input { padding: 6px 55px 6px 10px !important; @include removeBoxShadow; }
+    }
+    ion-header .toolbar-background-md { background-color: #fff; }
+}

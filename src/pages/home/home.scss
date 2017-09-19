@@ -1,0 +1,113 @@
+@mixin removeBoxShadow {
+    -webkit-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+}
+page-home {
+    .toolbar-md-secondary .toolbar-background-md{ background-color: #054443; }
+    .header-md::after { display: none; }
+}
+super-tabs-container  {
+    height: calc(100%)! important;
+}
+ion-list-header {
+    margin-bottom: 0 !important;
+}
+ion-header {
+    .toolbar-title-md, button {
+        color: #fff !important;
+    }
+    .toolbar-background-md {
+        background-color: #054443;
+        color: #fff;
+    }
+}
+.round-img {
+    overflow: hidden;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+super-tab {
+    .scrollable-list {
+        overflow-y: auto;
+        height: 100%;
+    }
+}
+.scrollable-list {
+    .item-md ion-thumbnail {
+        min-width: 50px;
+        min-height: 60px;
+        padding-top: 5px;
+    }
+    .list-info {
+        position: absolute;
+        right: 0;
+        top: 5px;
+        & > span {
+            color: #00E100;
+            font-size: 12px;
+            padding-bottom: 5px;
+            display: block;
+        }
+        .badge {
+            display: table;
+            background-color: #00E100;
+            min-height: 20px;
+            min-width: 20px;
+            border-radius: 100%;
+            text-align: center;
+            color: #fff;
+            float: right;
+            font-size: 12px;
+            padding: 3px;
+        }
+    }
+}
+
+ion-popover {
+    .popover-content {
+        top: 5px !important;
+        right: 5px !important;
+        float: right;
+        left: auto !important;
+        width: 200px !important;
+    }
+}
+.item-borderless {
+    & > div {
+        border-bottom: 0 !important;
+    }
+}
+popup {
+    ion-list {
+        margin-bottom: 0 !important;
+    }
+    ion-item {
+        padding-left: 0 !important;
+        & > div {
+            padding-right: 0 !important;
+        }
+    }
+    ion-label {
+        margin: 0 !important;
+    }
+    button {
+        padding: 15px !important;
+        height: 45px !important;
+        margin: 0 !important;
+        span {
+            justify-content: left !important;
+            color: #000;
+        }
+    }
+}
+.pageSearchField {
+    ion-buttons {
+        position: absolute;
+    }
+}

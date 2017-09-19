@@ -1,0 +1,13 @@
+page-status {
+    .status-button {
+        ion-thumbnail { font-size: 45px; color: #054443; }
+    }
+    ion-list-header {
+        padding-left: 0 !important;
+        margin-top: -1px;
+        .item-inner {
+            background-color: #ddd;
+            padding-left: 16px;
+        }
+    }
+}

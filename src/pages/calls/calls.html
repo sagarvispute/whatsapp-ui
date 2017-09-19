@@ -1,0 +1,34 @@
+<ion-list class="scrollable-list">
+    <ion-item *ngFor="let contact of contactlist">
+      <ion-thumbnail item-start>
+        <div class="round-img">
+          <img src="https://en.bidaway.com/img/no_image_user_profile.png">
+        </div>
+      </ion-thumbnail>
+      <h2>{{contact.name}}</h2>
+      <p><ion-icon name="ios-trending-up"></ion-icon> (2) Just Now</p>
+      <button ion-button clear item-end large><ion-icon name="md-call"></ion-icon></button>
+    </ion-item>
+  
+    <!--<ion-item>
+        <ion-thumbnail item-start>
+          <div class="round-img">
+            <img src="../../assets/images/picture.jpg">
+          </div>
+        </ion-thumbnail>
+        <h2>Rohit Pillai</h2>
+        <p><ion-icon name="ios-trending-down"></ion-icon> (2) Just Now</p>
+        <button ion-button clear item-end large><ion-icon name="md-call"></ion-icon></button>
+      </ion-item>
+  
+    <ion-item>
+      <ion-thumbnail item-start>
+        <div class="round-img">
+          <img src="../../assets/images/picture.jpg">
+        </div>
+      </ion-thumbnail>
+      <h2>Rohit Pillai</h2>
+      <p><ion-icon name="ios-trending-down"></ion-icon> (2) Just Now</p>
+      <button ion-button clear item-end large><ion-icon name="md-call"></ion-icon></button>
+    </ion-item>-->
+  </ion-list>

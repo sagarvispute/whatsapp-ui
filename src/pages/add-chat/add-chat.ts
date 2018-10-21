@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { NavController, NavParams, PopoverController } from 'ionic-angular';
 import { popupPage } from '../../components/popup/popup';
 import { dataService } from '../../app/data.service';
 
